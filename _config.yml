@@ -1,0 +1,21 @@
+# Site settings
+title: Middle Path Development
+email: middlepathdevelopment@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://middlepathdevelopment.com" # the base hostname & protocol for your site
+twitter_username: benneben
+github_username:  bwanicur
+linkedin_url: "https://linkedin.com/in/benwanicur"
+
+# Build settings
+markdown: kramdown
+
+# simple permalink --> /:categories/:title.html
+permalink: none
+
+logo_link: 'https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/middlepath_logo.jpg'
+middlepath_image_link: 'https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/middlepath_logo_just_image.png'
