@@ -1,16 +1,32 @@
 ---
 layout: one_page
+technologies:
+  - 'PostgreSQL'
+  - 'MySQL'
+  - 'Ruby'
+  - 'Ruby on Rails'
+  - 'Sinatra'
+  - 'Amazon Web Services'
+  - 'Heroku'
+  - 'Javascript'
+  - 'jQuery'
+  - 'HTML5'
+  - 'CSS3'
+  - 'Bootstrap'
+  - 'Foundation'
 ---
 
 <section class="container-fluid" id="section1">
   <div class="v-center">
       <h1 class="text-center">Middle Path Development</h1>
-      <h2 class="text-center lato">Web Consultancy</h2>
-      <p class="text-center">
-      </p>
+      <div class="intro_statement">
+        <p>
+          The web has become <strong>the</strong> platform for modern business.  To succeed not only must you have the dedication and creativity to drive your business, but you also must have a strong technical foundation.  Middle Path Development can bridge that gap, prodiving clear guidance and creating software that will allow your business to grow to the next level.
+        </p>
+    </div>
   </div>
   <a href="#section2">
-  	<div class="scroll-down bounceInDown animated">
+  	<div class="scroll-down">
       <span>
         <i class="fa fa-angle-down fa-2x"></i>
       </span>
@@ -20,332 +36,211 @@ layout: one_page
 
 <section class="container-fluid" id="section2">
   <div class="container v-center">
-      <div class="row">
-          <div class="col-sm-4">
-              <div class="row">
-                  <div class="col-sm-12 text-center">
-                      <div class="panel panel-default slideInLeft animate">
-                          <div class="panel-heading">
-                          <h3>Robust</h3></div>
-                          <div class="panel-body">
-                              <p>There is other content and snippets of details or features that can be placed here..</p>
-                              <hr>GO
-                              <hr>
-                          </div>
-                      </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="panel panel-default slideInLeft animate">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-sm-4 text-center ben_image">
+                    <h3>Benjamin Wanicur</h3>
+                    <img src="https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/benw_thumb.jpg" />
                   </div>
-              </div>
-          </div>
-          <div class="col-sm-4 text-center">
-              <div class="row">
-                  <div class="col-sm-12 text-center">
-                      <div class="panel panel-default slideInUp animate">
-                          <div class="panel-heading">
-                          <h3>Simple</h3></div>
-                          <div class="panel-body">
-                              <p>There is other content and snippets of details or features that can be placed here..</p>
-                              <hr>GO
-                              <hr>
-                          </div>
-                      </div>
+                  <div class="about_ben_text col-sm-8">
+                    <p>
+                      I have been professionally developing web applications for the past 10 years.  I enjoy working with small businesses and helping them make their dreams a reality.  My experience working as a consultant has taught me how to avoid many of the the pitfalls (see my <a href="#section3">mission statement</a>) that ensare business owners as they try to start or improve their websites.
+                    </p>
+                    <p>
+                      I am a firm believer in iterative development and keeping my clients in tune with every step of the process.  This approach allows me to build what my clients really need and not waste any time or resources.
+                    </p>
+                    <p>
+                      You can learn more details about my work experience and get in touch with me right <a href="#section5">here</a>.
+                    </p>
                   </div>
+                </div>
               </div>
-          </div>
-          <div class="col-sm-4 text-center">
-              <div class="row">
-                  <div class="col-sm-12 text-center">
-                      <div class="panel panel-default slideInRight animate">
-                          <div class="panel-heading">
-                          <h3>Clean</h3></div>
-                          <div class="panel-body">
-                              <p>There is other content and snippets of details or features that can be placed here..</p>
-                              <hr>GO
-                              <hr>
-                          </div>
-                      </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">Some of my favorite technologies:&nbsp;</div>
+                  <div class="col-sm-9">
+                    {% for tech in page.technologies %}
+                      <span class="label label-default">{{ tech }}</span>&nbsp;
+                    {% endfor %}
                   </div>
+                </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
-      <!--/row-->
-      <div class="row">
-          <br>
-      </div>
+    </div>
   </div>
-  <!--/container-->
-</section>
-
-<section>
-  <div class="container-fluid v-center">
-      <div class="row">
-          <div class="col-sm-2 col-sm-offset-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-sm-2 col-sm-offset-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-          <div class="col-sm-2 col-xs-6">
-              <div class="text-center">
-                  <a href="">
-                      <img style="width:100px;" class="img-circle img-responsive img-thumbnail" src="//placehold.it/100/444">
-                  </a>
-                  <h3 class="text-center"></h3>
-              </div>
-          </div>
-      </div>
-      <!--/row-->
-  </div>
+  <a href="#section3">
+    <div class="scroll-down">
+      <span>
+        <i class="fa fa-angle-down fa-2x"></i>
+      </span>
+    </div>
+  </a>
 </section>
 
 <section class="container-fluid" id="section3">
-  <h1 class="text-center">A Bootstrap Foundation</h1>
+  <h2 class="text-center">Mission Statement</h1>
   <div class="row">
-      <div class="col-sm-6 col-sm-offset-3">
-          <h3 class="text-center lato slideInUp animate">That <strong>Doesn't</strong> Have to Look Like Bootstrap.</h3>
-          <br>
-          <div class="row">
-              <div class="col-xs-4 col-xs-offset-1">Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content.</div>
-              <div class="col-xs-2"></div>
-              <div class="col-xs-4 text-right">Anyhoo, this is just some random blurb of text, and Bootply.com is a playground and code editor for Bootstrap.</div>
-          </div>
-          <br>
-          <p class="text-center">
-              <img src="//placehold.it/444x222/444/FFF" class="img-responsive thumbnail center-block ">
+    <div class="col-sm-8 col-sm-offset-2 mission_statement_text">
+      <p>
+        My primary goal is to clear a path towards success for your business.  So... that is an obvious and vague statement (or insert other sarcastic comment here).  But, go on...
+      </p>
+
+      <p>
+        The path that businesses must traverse is littered with failed attempts.  There are a myraid or reasons for failure, but I can only speak towards those of a technical nature.
+      </p>
+
+      <p>
+        I have seen consultants over-engineer solutions that eat up funding and resources before the web application ever sees the light of day.  I have also worked on many projects where the original developers did not have the proper skill set to build a solid foundation.
+      </p>
+
+      <p>
+        <strong>My Pledge:</strong><br>
+        I will only advocate solutions that gives your business the best chance of success, <em>at that time</em>.  I will never choose a technology for its own sake or just because this is the "right" solution.  I will only build software that can move your business forward.
+      </p>
+    </div>
+  </div>
+  <a href="#section4">
+    <div class="scroll-down">
+      <span>
+        <i class="fa fa-angle-down fa-2x"></i>
+      </span>
+    </div>
+  </a>
+</section>
+
+<section class="container-fluid" id="section4">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 col-md-7 col-md-offset-3">
+      <h2 class="text-center lato">Some Recent Projects</h2>
+      <p>Most of the work I do is protected under NDA agreements.  I do have some projects that I am able to share with you.</p>
+
+      <!-- second chance -->
+      <div class="media">
+        <h3>Second Chance Dog Rescue</h3>
+        <div class="media-left">
+          <a href="http://second-chance.herokuapp.com" target="_blank">
+            <img src="https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/second_chance_thumb.png" />
+          </a>
+        </div>
+        <div class="media-body media-middle">
+          <p>
+            This was a pro-bono project that I spearheaded along with a few other developers.  We built a pet rescue site that has many features not typically found in similar sites, including: Admin and Volunteer accounts, API that pulls data from major pet rescue sites, and event planning system (users could schedule dogs for adoption events) just to name a few.
           </p>
+
+          <p>
+            <span class="label label-default">PostgreSQL</span>&nbsp;
+            <span class="label label-default">Ruby on Rails</span>&nbsp;
+            <span class="label label-default">jQuery</span>&nbsp;
+            <span class="label label-default">Refinery - CMS</span>&nbsp;
+            <span class="label label-default">Bootstrap</span>&nbsp;
+            <span class="label label-default">Heroku</span>&nbsp;
+          </p>
+        </div>
       </div>
+      <hr>
+
+      <!-- zenzi -->
+      <div class="media">
+        <h3>Zenzi</h3>
+        <div class="media-left">
+          <a href="http://zenzi.com" target="_blank">
+            <img src="https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/zenzi_thumb.png">
+          </a>
+        </div>
+        <div class="media-body media-middle">
+          <p>
+            Zenzi is a "values-based marketing company."  This was a home-grown CMS system that I inherited.  I was charged with updating several social media (LinkedIn API,  Twitter API).  I also added new features and fixed existing bugs.
+          </p>
+
+          <p>
+            <span class="label label-default">MySQL</span>&nbsp;
+            <span class="label label-default">Ruby on Rails</span>&nbsp;
+            <span class="label label-default">jQuery</span>&nbsp;
+            <span class="label label-default">LinkedIn API</span>&nbsp;
+            <span class="label label-default">Twitter API</span>&nbsp;
+            <span class="label label-default">Instagram API</span>&nbsp;
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- beyond94feet -->
+      <div class="media">
+        <h3>Beyond 94 Feet</h3>
+        <div class="media-left">
+          <a href="http://beyond94feet.com" target="_blank">
+            <img src="https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/beyond94feet_thumb.png">
+          </a>
+        </div>
+        <div class="media-body media-middle">
+          <p>
+            This site provides basketball coaches the ability to organize drills and plans to create more efficient practices. In an step-by-step process I re-wrote and replaced problematic pieces of the application while adding new features.  I believe the work done on this application has now given them a solid foundation.
+          </p>
+
+          <p>
+            <span class="label label-default">PostgreSQL</span>&nbsp;
+            <span class="label label-default">Ruby on Rails</span>&nbsp;
+            <span class="label label-default">jQuery</span>&nbsp;
+            <span class="label label-default">Foundation</span>&nbsp;
+            <span class="label label-default">Heroku</span>&nbsp;
+            <span class="label label-default">Stripe API</span>&nbsp;
+          </p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<section id="section4">
+
+<section id="section5">
   <div class="container v-center">
-      <div class="row">
-          <div class="col-md-12">
-              <h1 class="text-center">Make Contact</h1>
-              <hr>
-          </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Work Experience</h2>
       </div>
-      <div class="row">
-          <div class="col-sm-9">
-              <div class="row form-group">
-                  <div class="col-sm-3">
-                      <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required="">
-                  </div>
-                  <div class="col-sm-3">
-                      <input type="text" class="form-control" id="middleName" name="firstName" placeholder="Middle Name" required="">
-                  </div>
-                  <div class="col-sm-4">
-                      <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required="">
-                  </div>
-              </div>
-              <div class="row form-group">
-                  <div class="col-sm-5">
-                      <input type="email" class="form-control" name="email" placeholder="Email" required="">
-                  </div>
-                  <div class="col-sm-5">
-                      <input type="email" class="form-control" name="phone" placeholder="Phone" required="">
-                  </div>
-              </div>
-              <div class="row form-group">
-                  <div class="col-sm-10">
-                      <input type="homepage" class="form-control" placeholder="Website URL" required="">
-                  </div>
-              </div>
-              <div class="row form-group">
-                  <div class="col-sm-10">
-                      <button class="btn btn-default btn-lg pull-right">Contact Us</button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-3 pull-right">
-              <address>
-            <strong>Some LLC</strong><br>
-            795 Folsom Ave, Suite 600<br>
-            Newport, RI 94107<br>
-            P: (123) 456-7890
-          </address>
-              <address>
-            <strong>Email Us</strong><br>
-            <a href="mailto:#">first.last@example.com</a>
-          </address>
-          </div>
+    </div>
+    <div class="row work_experience_container">
+      <div class="col-sm-12">
+        <p class="linkedin">
+          <a class="contact_link" href="https://linkedin.com/in/benwanicur" target="_blank">
+            <i class="fa fa-linkedin fa-2x"></i>
+            <span>https://linkedin.com/in/benwanicur</span>
+          </a>
+        </p>
+        <p class="github">
+          <a class="contact_link" href="https://github.com/bwanicur" target="_blank">
+            <i class="fa fa-github fa-2x"></i>
+            <span>https://github.com/bwanicur</span>
+          </a>
+        </p>
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Contact Me</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="email">
+          <a class="contact_link" href="mailto:middlepathdevelopment@gmail.com" target="_blank">
+            <i class="fa fa-envelope fa-2x"></i>
+            <span>middlepathdevelopment@gmail.com</span>
+          </a>
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
-
-<section class="container-fluid" id="section5">
-  <div class="row">
-      <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-          <h2 class="text-center lato">Section with Marketing Highlights.</h2>
-          <hr>
-          <div class="media">
-              <h3>Boom</h3>
-              <div class="media-left">
-                  <img src="//placehold.it/100">
-              </div>
-              <div class="media-body media-middle">
-                  <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-              </div>
-          </div>
-          <hr>
-          <div class="media">
-              <h3>Boom</h3>
-              <div class="media-body media-middle">
-                  <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-              </div>
-              <div class="media-right">
-                  <img src="//placehold.it/100">
-              </div>
-          </div>
-          <hr>
-          <div class="media">
-              <h3>Boom</h3>
-              <div class="media-left">
-                  <img src="//placehold.it/100">
-              </div>
-              <div class="media-body media-middle">
-                  <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-              </div>
-          </div>
-          <hr>
-          <div class="media">
-              <h3>Boom</h3>
-              <div class="media-body media-middle">
-                  <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-              </div>
-              <div class="media-right">
-                  <img src="//placehold.it/100">
-              </div>
-          </div>
-          <hr>
-          <div class="media">
-              <h3>Boom</h3>
-              <div class="media-left">
-                  <img src="//placehold.it/100">
-              </div>
-              <div class="media-body media-middle">
-                  <p>Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-              </div>
-          </div>
-          <hr>
-          <div class="media">
-              <h3>Boom</h3>
-              <div class="media-body media-middle">
-                  <p>Offset right home page content that is taller that 12,000 pixels. That's a lotta content Lorem ipsum dolor sit amet, adipiscing elit.</p>
-              </div>
-              <div class="media-right">
-                  <img src="//placehold.it/100">
-              </div>
-          </div>
-
-      </div>
-  </div>
-</section>
-
-<section class="container-fluid" id="section6">
-  <ul class="row list-unstyled">
-      <li class="col-md-6 col-md-offset-1 col-xs-10 col-xs-offset-1">
-          <h3 class="text-center">This will scale down proportionately.</h3>
-      </li>
-      <li class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1 text-center">
-          <a href="" class="center-block btn btn-default btn-lg btn-huge lato animate slideInRight">Responsive Design</a>
-      </li>
-  </ul>
-</section>
-
-<section class="container-fluid" id="section7">
-  <div class="row">
-      <!--fontawesome icons-->
-      <div class="col-sm-1 col-sm-offset-3 col-xs-4 text-center">
-          <i class="fa fa-github fa-4x"></i>
-      </div>
-      <div class="col-sm-1 col-xs-4 text-center">
-          <i class="fa fa-foursquare fa-4x"></i>
-      </div>
-      <div class="col-sm-1 col-xs-4 text-center">
-          <i class="fa fa-pinterest fa-4x"></i>
-      </div>
-      <div class="col-sm-1 col-xs-4 text-center">
-          <i class="fa fa-google-plus fa-4x"></i>
-      </div>
-      <div class="col-sm-1 col-xs-4 text-center">
-          <i class="fa fa-twitter fa-4x"></i>
-      </div>
-      <div class="col-sm-1 col-xs-4 text-center">
-          <i class="fa fa-dribbble fa-4x"></i>
-      </div>
-  </div>
-</section>
-
-
-
-<!-- <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div> -->

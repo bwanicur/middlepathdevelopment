@@ -1,0 +1,32 @@
+<script type="text/javascript">
+$(function(){
+  Tags.init();
+});
+
+var Tags = function(){
+
+  var filterByTag = function(){
+    var tagName = $(this).attr('data-tag-name');
+    $('.post-link-list-item').each(function(idx, li){
+      var myLi = $(li);
+      var myLiTags = myLi.attr('data-tags').split(',');
+      console.log('myLiTags', myLiTags);
+      if($.inArray(tagName, myLiTags) < 0){
+        myLi.addClass('hidden');
+      }
+    });
+  }
+
+  var clearFilter = function(){
+    $('.post-link-list-item').removeClass('hidden');
+  }
+
+  return {
+    init:function(){
+      $('.tag-filter-link').on('click', filterByTag);
+      $('.clear_tag_filter_link').on('click', clearFilter);
+    }
+  }
+
+}();
+</script>

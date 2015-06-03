@@ -53,25 +53,26 @@ a:hover {
 }
 
 .navbar-trans {
-	background-color:#2b2b2b;
-    color:#cdcdcd;
-    border-width:0;
+  color:#cdcdcd;
+  border-width:0;
 }
 
 .navbar-trans .navbar-brand, .navbar-trans >.container-fluid .navbar-brand {
-    padding: 14px;
-    color:#f44d3c;
+  padding: 14px;
+  color: #FFFFFF;
+	font-weight: lighter;
+	font-size: 20px;
 }
 
 .navbar-trans li>a:focus,.navbar-trans li.active {
-	background-color:#f44d3c;
+	background-color: #FFFFFF;
 	color:#333;
 }
 
 .navbar-trans li>a:hover {
-	background-color:#f44d3c;
-	color:#fff;
-	opacity:0.5;
+	background-color: #FFFFFF;
+	color: rgb(11, 60, 30);
+	opacity:0.8;
 }
 
 .navbar-trans a{
@@ -121,7 +122,7 @@ a:hover {
 }
 
 section {
-	padding-top:70px;
+	padding-top: 35px;
   padding-bottom:50px;
   min-height:100%;
   min-height:calc(100% - 0);
@@ -131,47 +132,40 @@ section {
 }
 
 @media (min-width:768px) {
-    .v-center {
-        height: 50%;
-        overflow: visible;
-        margin: auto;
-        position: absolute;
-        top: 0; left: 0; bottom: 0; right: 0;
-    }
+  .v-center {
+      height: 50%;
+      overflow: visible;
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+  }
+
+	#section1 .intro_statement {
+		font-size: 1.7em;
+	}
 }
 
 #section1, #section3 {
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.8);
+
+}
+
+#section1 {
 	color:#fff;
 	font-family: 'Bitter', serif;
 }
 
-#section4 {
+#section4{
 	background-color: #f6f6f6;
 	color:#444;
 }
 
-#section2 {
+/*#section5 {
 	background-color: #fff;
 }
-
-#section3 {
-	background-color: rgba(0,0,0,0.9);
-}
-
-#section5 {
-	background-color: #fff;
-}
-
-#section6 {
-    background-color: #eee;
-	min-height:130px;
-	padding-top:40px;
-	padding-bottom:40px;
-}
+*/
 
 #section7 {
-	background-color: #f44d3c;
 	color: #f6f6f6;
 	min-height:130px;
 	padding-top:40px;
@@ -187,11 +181,100 @@ footer {
 }
 
 footer .nav>li>a {
-    padding: 3px;
-    color: #f44d3c;
+  padding: 3px;
+  color: #cdcdcd;
 }
 
 footer .nav>li>a:hover {
-    background-color:transparent;
+  background-color:transparent;
 	color:#fff;
+}
+
+
+/* middle path customizations */
+.v-center {
+	margin-top: 10%;
+}
+
+.navbar, #section7, #footer {
+	background-color: rgb(11, 60, 30);
+}
+
+.navbar-left>li>a {
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 15px;
+}
+
+#section1 .intro_statement {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+	font-family: lato, sans-serif;
+	font-weight: lighter;
+}
+
+#section2 {
+	font-size: 1.1em;
+}
+
+#section2 .ben_image img{
+	height: 250px;
+}
+
+#section2 .about_ben_text {
+	margin-top: 25px;
+	font-size: 1.1em;
+}
+
+#section2 .label {
+	display: inline-block;
+	margin-bottom: 4px;
+	padding: .5em .6em .5em;
+	font-size: .9em;
+	font-weight: lighter;
+}
+
+#section3 h2 {
+	color: #FFFFFF;
+	margin-bottom: 5%;
+}
+
+#section3 .mission_statement_text {
+	color: #FFF;
+	font-weight: lighter;
+	font-size: 1.5em;
+}
+
+#section3 .mission_statement_text p {
+	margin-bottom: 4%;
+}
+
+#section4 hr {
+	border-top: 1px solid #6B6B6B;
+}
+
+#section4 .media-body {
+	font-size: 1.2em;
+}
+
+#section5 h2 {
+	color: #ffffff;
+	margin-bottom: 2%;
+}
+
+#section5 .work_experience_container {
+	margin-bottom: 5%;
+}
+
+.contact_link:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.contact_link span {
+	margin-left: 10px;
+	position: relative;
+	top: -4px;
+	font-size: 16px;
 }
