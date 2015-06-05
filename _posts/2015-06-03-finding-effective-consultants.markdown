@@ -7,10 +7,6 @@ tags:
 
 Finding consultants can be a real challenge in today's market.  This article is aimed at non-technical business owners or whoever might be in charge of hiring technical talent.  When I say "consultant", I am primarily talking about *programmers*, but as we will see, it takes more than being a technically skilled programmer to be an effective consultant.
 
-Most businesses are concerned with finding a competent programmer.  I believe the scenario that is most commonly feared is finding a programmer who is technically incompetent (at least for the tasks at hand).  The concern is that they will build you something that has serious technical problems.  While this is certainly a legitimate concern, I think it is easier to avoid than other more subtle problems.  More on this later.
-
-Businesses can still find ineffective consultants even if they have found their *rockstar*, *guru*, etc... (we'll talk more about these terms and why you should not use them later).  I think this is surprising to many businesses.  A highly skilled consultant/programmer can still be ineffective or be a bad fit for their them.
-
 <hr>
 
 ### Holes In My House's Foundation
