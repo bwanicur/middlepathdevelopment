@@ -155,6 +155,11 @@ section {
 	font-family: 'Bitter', serif;
 }
 
+#section3 a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
 #section4{
 	background-color: #f6f6f6;
 	color:#444;

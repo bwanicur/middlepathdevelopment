@@ -2,12 +2,22 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+  border-top: 5px solid $grey-color-dark;
+  border-bottom: 1px solid $grey-color-light;
+  min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+  // Positioning context for the mobile navigation icon
+  position: relative;
+
+  .site-home-link {
+    float: left;
+    margin-top: 12px;
+    color: #898989;
+    margin-right: 30px;
+  }
+  .site-home-link:hover {
+    color: #2A7AE2;
+  }
 }
 
 .site-title {
@@ -247,5 +257,10 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    hr {
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
 }
