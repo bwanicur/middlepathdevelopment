@@ -96,18 +96,20 @@ a:hover {
 }
 
 .scroll-down {
-  position: absolute;
-  left: 50%;
+	margin: auto;
+  margin-top: 20px;
+  /* position: relative; */
+  /* left: 50%; */
   bottom: 40px;
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   display: block;
   padding: 7px;
   text-align: center;
-  z-index:-1
+  z-index: -1;
 }
 
 .scroll-up {
@@ -267,7 +269,7 @@ footer .nav>li>a:hover {
 	border-top: 1px solid #6B6B6B;
 }
 
-#section4 .media-body {
+#section4 .example-text {
 	font-size: 1.2em;
 }
 
