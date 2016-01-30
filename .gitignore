@@ -1,3 +1,4 @@
 _site
 .sass-cache
 TODO.txt
+*.DS_Store
