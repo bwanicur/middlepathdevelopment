@@ -1,12 +1,16 @@
 ---
-layout: post
+title: 'Consult Early!'
+layout: post 
 date: 2017-11-20
 tags:
   - consulting
   - project-management 
 ---
 
-# Consult Early!
+<div class="home-link-container">
+  <a class="blog-home-link" href="/blog">Blog Home</a>
+</div>
+
 When I’m hired onto an existing project, I’m often surprised to find that costly decisions were made early on in the process without insight from someone with sufficient technical knowledge to avoid costly mistakes.  Everyone must live with these high level decisions (unless there is enough funding to absorb the cost of back-tracking).  I’m surprised by how many times I see this **major mis-step**.  How do we avoid it ?  Consult early!
 
 ## Technical Partner

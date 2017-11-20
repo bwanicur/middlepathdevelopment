@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 
 <div class="home">
@@ -8,24 +8,10 @@ layout: home
     <ul class="post-list">
       {% for post in site.posts %}
         <li class="post-link-list-item" data-tags="{{ post.tags | join:',' }}">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h3>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>&nbsp;
+          <span class="post-meta"><small><i>{{ post.date | date: "%b %-d, %Y" }}</i></small></span>
         </li>
       {% endfor %}
     </ul>
-  </div>
-  <div class="tag-list-container col-sm-4">
-    {% for tag in site.site_tags %}
-      <a class="tag-filter-link " href="javascript:void(0)" data-tag-name="{{ tag }}">
-        <span class="label label-primary">{{ tag }}</span>
-      </a>
-    {% endfor %}
-    <div class="clearfix"></div>
-    <div class="clear_tag_filter_link_div">
-      <a class="clear_tag_filter_link" href="javascript:void(0)">Show All Posts</a>
-    </div>
   </div>
 </div>

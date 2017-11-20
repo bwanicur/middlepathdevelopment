@@ -1,9 +1,14 @@
 ---
-layout: post
+title: 'Finding Effective Consultants'
+layout: post 
 date: 2015-06-03
 tags:
   - consulting
 ---
+<div class="home-link-container">
+  <a class="blog-home-link" href="/blog">Blog Home</a>
+</div>
+
 
 Finding consultants can be a real challenge in today's market.  This article is aimed at non-technical business owners or whoever might be in charge of hiring technical talent.  When I say "consultant", I am primarily talking about *programmers*, but as we will see, it takes more than being a technically skilled programmer to be an effective consultant.
 

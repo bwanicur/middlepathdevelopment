@@ -1,0 +1,13 @@
+.post-list li {
+  list-style-type: none;
+  margin-bottom: 2%;
+}
+
+.home-link-container {
+  margin-bottom: 2%;
+}
+
+.home-link, .blog-home-link {
+  color: #35b051;
+  margin-left: -2%;
+}
