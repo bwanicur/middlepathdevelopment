@@ -15,8 +15,10 @@ markdown: kramdown
 
 permalink: /blog/:title.html
 
+theme: 'jekyll-whiteglass'
+
 site_tags:
   - consulting
-
+  - project-management
 
 logo_link: 'https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/middlepath_logo.jpg'
