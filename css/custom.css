@@ -11,3 +11,12 @@
   color: #35b051;
   margin-left: -2%;
 }
+
+.contact-link-collection-container {
+  margin-bottom: 10%;
+}
+
+.contact-link-container {
+  float: left;
+  margin-right: 3%;
+}
