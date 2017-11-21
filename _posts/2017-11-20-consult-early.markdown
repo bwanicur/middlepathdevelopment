@@ -46,7 +46,8 @@ Another unexpected benefit to working with consultants is that they are exposed 
 <hr>
 
 ## Mitigating the Risks
- As mentioned previously, there is no magic trick to finding someone.  Once you have some candidates, the following suggestions won’t prevent you from making mistakes, but hopefully they will prevent mistakes from growing into full-fledged catastrophes.
+
+As mentioned previously, there is no magic trick to finding someone.  Once you have some candidates, the following suggestions won’t prevent you from making mistakes, but hopefully they will prevent mistakes from growing into full-fledged catastrophes.
 
 #### Work Incrementally
 
@@ -55,9 +56,9 @@ This is the same advice I have for working directly with someone who is writing 
 #### Look for advice, not answers
 
 Consultants should give people options.   There is never a perfect answer.  Each decision has pros and cons.  A good consultant should understand this truth.  I would be wary of someone telling me:
-	- there is only one way to solve this potential task  
-	- only “Technology X” can accomplish this task
-	-  X is better than Y because X is _just better_
+- there is only one way to solve this potential task  
+- only “Technology X” can accomplish this task
+-  X is better than Y because X is _just better_
 
 #### Get a Second Opinion
 
