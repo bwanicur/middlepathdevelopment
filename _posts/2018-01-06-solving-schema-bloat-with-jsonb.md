@@ -117,7 +117,7 @@ end
 
 We’ve stored info about our custom attributes in a hash.  Now we just need to tell our model about these custom attributes.  Here is where Storext and Virtus make our lives much easier!
 
-In Rails 4 and beyond, creating a JSONB column on a table is easy (if you are using an earlier version of Rails, some Ruby gems might help you or trying just writing the migration in raw SQL).
+In Rails 4.2 and beyond, creating a JSONB column on a table is easy (if you are using an earlier version of Rails, some Ruby gems might help you or trying just writing the migration in raw SQL).
 
 ```ruby
 create_table :foobars do |t|
