@@ -159,7 +159,7 @@ There are definitely some columns that even if optional, may not be good candida
 ```ruby
 foobar = Foobar.new
 foobar.att_1 # uses the ruby getter for "att_1" (in our case the JSONB attribute) to fetch the value
-foobar.columns_hash['att_1'] # uses the foobars.att_1 database column to fetch the value
+foobar['att_1'] # uses the foobars.att_1 database column to fetch the value
 ```
 For more complex data migrations, doing things at a lower level in ActiveRecord or at the SQL level might be required.  Once the migration is complete, it is possible to delete or hide (rename) the legacy columns.
 
