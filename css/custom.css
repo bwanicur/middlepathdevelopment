@@ -2,6 +2,10 @@
   max-width: 68rem;  
 }
 
+.main-content img {
+  margin-left: 8%;
+}
+
 .post-list li {
   list-style-type: none;
   margin-bottom: 2%;
