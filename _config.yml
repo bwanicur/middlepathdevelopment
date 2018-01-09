@@ -16,5 +16,8 @@ theme: 'jekyll-theme-cayman'
 site_tags:
   - consulting
   - project-management
+  - web-development
+  - ruby
+  - postgresql
 
 logo_link: 'https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/middlepath_logo.jpg'

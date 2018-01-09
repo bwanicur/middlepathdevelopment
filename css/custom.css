@@ -1,3 +1,7 @@
+.main-content{
+  max-width: 68rem;  
+}
+
 .post-list li {
   list-style-type: none;
   margin-bottom: 2%;
