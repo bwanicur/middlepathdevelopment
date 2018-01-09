@@ -117,6 +117,18 @@ end
 
 We’ve stored info about our custom attributes in a hash.  Now we just need to tell our model about these custom attributes.  Here is where Storext and Virtus make our lives much easier!
 
+In Rails 4 and beyond, creating a JSONB column on a table is easy (if you are using an earlier version of Rails, some Ruby gems might help you or trying just writing the migration in raw SQL).
+
+```ruby
+create_table :foobars do |t|
+  t.integer :company_id,  null: false
+  t.jsonb :optional_attributes, null: false, default: '{}'
+end
+add_index :foobars, :optional_attributes, using: :gin
+```
+
+And our model code will look something like this:
+
 ```ruby
 class Foobar < ActiveRecord::Base
   include Company1CustomAtts
@@ -124,7 +136,7 @@ class Foobar < ActiveRecord::Base
   include Storext.model
   @@all_custom_atts = COMPANY1_CUSTOM_ATTS + COMPANY2_CUSTOM_ATTS
   @@all_custom_atts.each do |hash|
-    store_attribute :custom_attributes, hash[:key].to_sym, hash[:type], default: hash[:default]
+    store_attribute :optional_attributes, hash[:key].to_sym, hash[:type], default: hash[:default]
   end
   # ...
 end
