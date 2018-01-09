@@ -135,7 +135,9 @@ We need to include our collection of custom attributes.  We also need to include
 ```ruby
 foobar = Foobar.first
 foobar.att_1 = 42
-foobar.att_1 # returns 42
+foobar.save
+new_var = Foobar.first
+new_var.att_1 # returns 42
 ```
 
 and Rails will fetch the value from the JSONB attribute, just as if it was a regular database column.
