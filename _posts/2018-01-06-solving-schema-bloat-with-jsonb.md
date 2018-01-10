@@ -17,7 +17,7 @@ I often find myself inheriting projects with database schema’s that suffer fro
 
 Schema Bloat:  The act of adding more and more non-essential columns to a database table in order solve problems for a limited group of your application’s users.
 
-“Table Bloat” would probably make more sense, however, the term “table bloat” has a specific [meaning](https://dba.stackexchange.com/questions/126258/what-is-table-bloating-in-databases).  So we will stick with “schema bloat” for the remainder of this article.
+“Table Bloat” would probably make more sense, however, the term “table bloat” has a specific <a href="https://dba.stackexchange.com/questions/126258/what-is-table-bloating-in-databases" target="_blank">meaning</a>.  So we will stick with “schema bloat” for the remainder of this article.
 
 ## Schema Bloat
 Typically there is a central table for an application - often _users_ or _companies_ or something similar.  The schema bloat problem typically happens when the following occurs:
@@ -68,7 +68,7 @@ INSERT INTO companies(optional_data) values ('{"opt_att": "Some Val 1", "another
 INSERT INTO companies(optional_data) values ('{"opt_att": "Some Val 2", "another_opt_att": "Another Val 2", "nested_obj": {"nested_att": "some nested value"}}');
 ```
 
-The syntax for querying values from a JSONB column is fairly straightforward.  There are lots of JSONB functions and operators that we are not going to cover.  You can [read about them here](https://www.postgresql.org/docs/9.5/static/functions-json.html)).
+The syntax for querying values from a JSONB column is fairly straightforward.  There are lots of JSONB functions and operators that we are not going to cover.  You can <a href="https://www.postgresql.org/docs/9.5/static/functions-json.html" target="_blank">read about them here</a>.
 
 Use the `->>` operator to select a value at the attribute level.   The following query:
 
@@ -92,11 +92,11 @@ Once we get into the Ruby (or insert other language here) level things can becom
 ---
 
 ## Ruby and the Storext Gem
-Welcome to the Ruby part of this article!  The Storext gem makes it easy for ActiveRecord to work with JSONB.  The Storext gem also wraps the Virtus gem, so let’s talk about that briefly.
+Welcome to the Ruby part of this article!  The <a href="https://github.com/G5/storext" target="_blank">Storext</a> gem makes it easy for ActiveRecord to work with JSONB.  The Storext gem also wraps the Virtus gem, so let’s talk about that briefly.
 
 #### Virtus Gem
 
-The Virtus gem assists in creating virtual attributes for a Ruby object.  In our case, it is an object that inherits from ActiveRecord::Base - a model.  When can think of [Virtus](https://github.com/solnic/virtus) as a pumped up version of  `attr_accessor`.  The important part of Virtus is that it can enforce type restrictions, which helps a virtual attribute behave more like a column.  Ideally, we want Rails to see no difference between fetching data from a “normal” column, versus our JSONB, optional_values attribute.
+The Virtus gem assists in creating virtual attributes for a Ruby object.  In our case, it is an object that inherits from ActiveRecord::Base - a model.  When can think of <a href="https://github.com/solnic/virtus" target="_blank">Virtus</a> as a pumped up version of  `attr_accessor`.  The important part of Virtus is that it can enforce type restrictions, which helps a virtual attribute behave more like a column.  Ideally, we want Rails to see no difference between fetching data from a “normal” column, versus our JSONB, optional_values attribute.
 
 #### Using Storext with Rails
 
