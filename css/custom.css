@@ -1,5 +1,9 @@
+body {
+  color: #1b1b1a;
+}
+
 .main-content{
-  max-width: 68rem;  
+  max-width: 68rem;
 }
 
 .main-content img {
