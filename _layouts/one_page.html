@@ -16,25 +16,24 @@
 <body >
 <nav class="navbar navbar-trans navbar-fixed-top" role="navigation">
   <div class="container">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Middle Path Development</a>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar-collapsible">
-          <ul class="nav navbar-nav navbar-left">
-              <li><a href="#section2">About Me</a></li>
-              <li><a href="#section3">Mission</a></li>
-              <li><a href="#section4">Contact</a></li>
-              <li><a href="/blog" target="_blank">Blog</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-          </ul>
-      </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Middle Path Development</a>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-collapsible">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#section2">About Me</a></li>
+        <li><a href="#section3">Mission</a></li>
+        <li><a href="#section4">Contact</a></li>
+        <li class="never-active"><a href="/blog" target="_blank">Blog</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right"></ul>
+    </div>
   </div>
 </nav>
 
@@ -42,78 +41,74 @@
 
 <footer id="footer">
   <div class="container">
-      <div class="row">
-          <div class="col-xs-6 col-md-3 column">
-            <!-- spacer: nothing here -->
-            <!-- TODO: github, linkedin, etc... -->
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-3 column">
-            <!-- spacer: nothing here -->
-          </div>
-          <div class="col-xs-6 col-md-3 column">
-            <!-- spacer: nothing here -->
-          </div>
-          <div class="col-xs-6 col-md-3 column">
-              <h4>Site Design based on</h4>
-              <ul class="nav">
-                <li>
-                  <a href="http://www.bootstrapzero.com/bootstrap-template/just-one-page">
-                    Just One Page Layout
-                  </a>
-                </li>
-              </ul>
-          </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-3 column">
+        <!-- spacer: nothing here -->
+        <!-- TODO: github, linkedin, etc... -->
       </div>
-      <!--/row-->
-      <p class="text-right">
-      </p>
+      <div class="col-xs-6 col-sm-6 col-md-3 column">
+        <!-- spacer: nothing here -->
+      </div>
+      <div class="col-xs-6 col-md-3 column">
+        <!-- spacer: nothing here -->
+      </div>
+        <div class="col-xs-6 col-md-3 column">
+          <h4>Site Design based on</h4>
+          <ul class="nav">
+            <li>
+              <a href="http://www.bootstrapzero.com/bootstrap-template/just-one-page">
+                Just One Page Layout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-right"></p>
+    </div>
   </div>
 </footer>
 
 <div class="scroll-up">
-<a href="#"><i class="fa fa-angle-up"></i></a>
+  <a href="#"><i class="fa fa-angle-up"></i></a>
 </div>
 
-  <!--scripts loaded here-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  /* activate scrollspy menu */
+  $('body').scrollspy({
+    target: '#navbar-collapsible',
+    offset: 52
+  });
 
-  <script type="text/javascript">
-    /* activate scrollspy menu */
-    $('body').scrollspy({
-      target: '#navbar-collapsible',
-      offset: 52
-    });
+  /* smooth scrolling sections */
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 50
+        }, 800);
 
-    /* smooth scrolling sections */
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 50
-          }, 800);
-
-          if (this.hash=="#section1") {
-              $('.scroll-up').hide();
-          }
-          else {
-              $('.scroll-up').show();
-          }
-
-
-          // activte animations in this section
-          target.find('.animate').delay(1200).addClass("animated");
-          setTimeout(function(){
-              target.find('.animated').removeClass("animated");
-          },2000);
-
-          return false;
+        if (this.hash=="#section1") {
+          $('.scroll-up').hide();
         }
+        else {
+          $('.scroll-up').show();
+        }
+
+        // activte animations in this section
+        target.find('.animate').delay(1200).addClass("animated");
+        setTimeout(function(){
+          target.find('.animated').removeClass("animated");
+        },2000);
+
+        return false;
       }
-    });
-  </script>
+    }
+  });
+</script>
 </body>
 </html>
