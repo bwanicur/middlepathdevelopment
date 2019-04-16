@@ -3,7 +3,7 @@
 
 html,body {
   height:100%;
-  background:center no-repeat fixed url('https://s3-us-west-1.amazonaws.com/middlepathdevelopment.com/middlepath_logo_just_image.png');
+  background:center no-repeat fixed url('/images/middlepath_logo_just_image.png');
   background-size: cover;
   color: #444;
   font-family: 'Lato', sans-serif;
