@@ -1,0 +1,34 @@
+body {
+  color: #1b1b1a;
+}
+
+.main-content{
+  max-width: 68rem;
+}
+
+.main-content img {
+  margin-left: 8%;
+}
+
+.post-list li {
+  list-style-type: none;
+  margin-bottom: 2%;
+}
+
+.home-link-container {
+  margin-bottom: 2%;
+}
+
+.home-link, .blog-home-link {
+  color: #35b051;
+  margin-left: -2%;
+}
+
+.contact-link-collection-container {
+  margin-bottom: 10%;
+}
+
+.contact-link-container {
+  float: left;
+  margin-right: 3%;
+}
