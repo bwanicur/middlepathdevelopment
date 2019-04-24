@@ -2,7 +2,7 @@
 title: Middle Path Development - Blog
 email: middlepathdevelopment@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://middlepathdevelopment.com" # the base hostname & protocol for your site
+url: "https://middlepathdevelopment.com" # the base hostname & protocol for your site
 github_username:  bwanicur
 linkedin_username: "benwanicur"
 
